@@ -1,7 +1,9 @@
+//Imports
 import express from "express";
 import { studentRouter } from "./routes/studentRouter.js";
 import mongoose from "mongoose";
 
+//Conexão com o MongoDB usando mongoose
 (async () => {
   try {
     await mongoose.connect(
