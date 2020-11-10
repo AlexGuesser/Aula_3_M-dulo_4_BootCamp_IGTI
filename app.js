@@ -27,4 +27,4 @@ const app = express();
 app.use(express.json());
 app.use(studentRouter);
 
-app.listen(3000, () => console.log("API started"));
+app.listen(process.env.PORT, () => console.log("API started"));
